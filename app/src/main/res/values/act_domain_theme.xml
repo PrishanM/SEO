@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="act_domain_theme_lbl_dis" parent="@style/act_domains_theme_lbl_dis">
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+
+    <style name="act_domain_theme_edt">
+        <item name="android:textColor">@color/act_domain_txt</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

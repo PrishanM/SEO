@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="act_domains_theme_lbl_dis">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#40d1ec</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="act_domains_theme_lbl_val">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#3f4445</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="act_domains_theme_lst_item_lbl_dis">
+        <item name="android:textColor">#40d1ec</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="act_domains_theme_lst_item_lbl_val">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="act_domains_theme_lst_item_image_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>

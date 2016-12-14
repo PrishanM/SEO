@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/act_back_gray"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/act_domain_theme_lbl_dis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textUri"
+            android:text="Web Site"/>
+
+        <EditText
+            android:id="@+id/txt_domain"
+            style="@style/act_domain_theme_edt"
+            android:hint="type a domain"
+            android:inputType="text"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/blue_line"/>
+
+        <TextView
+            style="@style/act_domain_theme_lbl_dis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key Word"/>
+
+        <EditText
+            android:id="@+id/txt_keyword"
+            style="@style/act_domain_theme_edt"
+            android:hint="type a key word"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/blue_line"/>
+
+        <TextView
+            style="@style/act_domain_theme_lbl_dis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+
+        <EditText
+            android:id="@+id/txt_name"
+            style="@style/act_domain_theme_edt"
+            android:hint="type your name"
+            android:inputType="text"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/blue_line"/>
+
+        <TextView
+            style="@style/act_domain_theme_lbl_dis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail Address"/>
+
+        <EditText
+            android:id="@+id/txt_email"
+            style="@style/act_domain_theme_edt"
+            android:hint="type your email address"
+            android:inputType="textEmailAddress"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/blue_line"/>
+
+        <TextView
+            style="@style/act_domain_theme_lbl_dis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Number"/>
+
+        <EditText
+            android:id="@+id/txt_contact_number"
+            style="@style/act_domain_theme_edt"
+            android:hint="type your contact number"
+            android:inputType="phone"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/blue_line"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cmd_check"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/act_domain_cmd_check"
+        android:paddingLeft="10dp"/>
+
+</RelativeLayout>

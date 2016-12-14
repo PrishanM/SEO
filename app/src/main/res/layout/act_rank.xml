@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/act_back_blue"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:src="@drawable/act_rank_title"/>
+
+    <TextView
+        android:id="@+id/lbl_rank"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/act_rank_lbl_rank_back"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="#efecec"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/pro_rank"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/act_rank_lbl_rank_back"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView style="@style/act_rank_rating_star"/>
+
+        <ImageView style="@style/act_rank_rating_star"/>
+
+        <ImageView style="@style/act_rank_rating_star"/>
+
+        <ImageView style="@style/act_rank_rating_star"/>
+
+        <ImageView style="@style/act_rank_rating_star"/>
+
+        <ImageView style="@style/act_rank_rating_star"/>
+
+        <ImageView style="@style/act_rank_rating_star"/>
+
+        <ImageView style="@style/act_rank_rating_star"/>
+
+        <ImageView style="@style/act_rank_rating_star"/>
+
+        <ImageView style="@style/act_rank_rating_star"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lbl_domain"
+        style="@style/act_rank_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="www.domain.com"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KEY WORD"
+            android:textColor="#aa0e1556"/>
+
+        <TextView
+            android:id="@+id/lbl_keyword"
+            style="@style/act_rank_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="keyword"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/act_rank_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Need to improve ranking ?"/>
+
+    <TextView
+        style="@style/act_rank_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Contact us..."/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:src="@drawable/act_rank_email"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:src="@drawable/act_rank_contact_number"/>
+
+</LinearLayout>

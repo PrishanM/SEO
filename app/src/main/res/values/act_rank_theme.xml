@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="act_rank_rating_star">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:src">@drawable/rating_star</item>
+    </style>
+
+    <style name="act_rank_lbl">
+        <item name="android:textColor">#c8c8c8</item>
+    </style>
+
+</resources>
