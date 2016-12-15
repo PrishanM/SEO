@@ -2,6 +2,7 @@ package evensel.pixelclearseo;
 
 import android.app.Activity;
 import android.os.Handler;
+import android.util.Log;
 import android.widget.Toast;
 
 public class ActBase extends Activity
@@ -26,5 +27,7 @@ public class ActBase extends Activity
 					finish();
 				}
 			}, iExitTime * 1000);
+
+		Log.d("zzzzz","qwwwww");
 	}
 }
