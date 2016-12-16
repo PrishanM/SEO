@@ -22,18 +22,21 @@
 
         <activity
             android:name=".ActDomains"
-            android:label="DETAILS">
+            android:label="DETAILS"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:label="ENTER DETAILS"
             android:name=".ActDomain"
-            android:noHistory="true">
+            android:noHistory="true"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".ActRank"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
         </activity>
 
     </application>

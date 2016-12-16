@@ -2,56 +2,71 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/act_back_gray"
+                android:background="@color/colorBackground"
                 android:orientation="vertical"
-                android:padding="20dp">
+                android:padding="@dimen/activity_horizontal_margin">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
         <TextView
-            style="@style/act_domain_theme_lbl_dis"
+            android:typeface="monospace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textUri"
-            android:text="Web Site"/>
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="Web Site"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
 
         <EditText
             android:id="@+id/txt_domain"
             style="@style/act_domain_theme_edt"
             android:hint="type a domain"
-            android:inputType="text"/>
+            android:inputType="textUri"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:src="@drawable/blue_line"/>
 
         <TextView
-            style="@style/act_domain_theme_lbl_dis"
+            android:typeface="monospace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Key Word"/>
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="Key Word"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
 
         <EditText
             android:id="@+id/txt_keyword"
             style="@style/act_domain_theme_edt"
             android:hint="type a key word"/>
 
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:src="@drawable/blue_line"/>
 
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_large" />
+
         <TextView
-            style="@style/act_domain_theme_lbl_dis"
+            android:typeface="monospace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name"/>
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="Name"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
 
         <EditText
             android:id="@+id/txt_name"
@@ -62,14 +77,17 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:src="@drawable/blue_line"/>
 
         <TextView
-            style="@style/act_domain_theme_lbl_dis"
+            android:typeface="monospace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="E-mail Address"/>
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="E-mail Address"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
 
         <EditText
             android:id="@+id/txt_email"
@@ -80,14 +98,17 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:src="@drawable/blue_line"/>
 
         <TextView
-            style="@style/act_domain_theme_lbl_dis"
+            android:typeface="monospace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contact Number"/>
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="Contact Number"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
 
         <EditText
             android:id="@+id/txt_contact_number"
@@ -98,18 +119,27 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:src="@drawable/blue_line"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/font_normal" />
+
+        <Button
+            android:id="@+id/cmd_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_large"
+            android:text="Check Rank"
+            android:typeface="monospace"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:background="@drawable/cornered_button"/>
+
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/cmd_check"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/act_domain_cmd_check"
-        android:paddingLeft="10dp"/>
+
 
 </RelativeLayout>

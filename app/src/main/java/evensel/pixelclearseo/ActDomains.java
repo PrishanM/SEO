@@ -3,7 +3,7 @@ package evensel.pixelclearseo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -19,7 +19,7 @@ public class ActDomains extends ActBaseTitleBar
 
 		p_LstDomain = (ListView) findViewById(R.id.lst_domain);
 
-		p_CmdAdd = (Button) findViewById(R.id.cmd_add_domain);
+		p_CmdAdd = (LinearLayout) findViewById(R.id.cmd_add_domain);
 
 		p_CmdAdd.setOnClickListener(new View.OnClickListener()
 		{
@@ -62,5 +62,5 @@ public class ActDomains extends ActBaseTitleBar
 	private TextView p_LblName;
 	private TextView p_LblEmail;
 	private TextView p_LblContactNumber;
-	private Button p_CmdAdd;
+	private LinearLayout p_CmdAdd;
 }

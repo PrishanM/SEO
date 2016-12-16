@@ -1,38 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:layout_marginBottom="10dp"
-              android:background="#aaffffff"
-              android:orientation="horizontal"
-              android:paddingLeft="10dp">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cornered_row">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_weight="8"
-        android:orientation="vertical">
+        android:id="@+id/rowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:background="@color/colorRow">
 
-        <TextView
-            android:id="@+id/lbl_dis"
-            style="@style/act_domains_theme_lst_item_lbl_dis"
-            android:text="domain"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:orientation="vertical"
+            android:weightSum="2">
 
-        <TextView
-            android:id="@+id/lbl_val"
-            style="@style/act_domains_theme_lst_item_lbl_val"
-            android:text="domain"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:id="@+id/lbl_dis"
+                android:text="Domain"
+                android:gravity="center_vertical"
+                android:typeface="monospace"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_normal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:id="@+id/lbl_val"
+                android:text="Domain"
+                android:gravity="center_vertical"
+                android:typeface="monospace"
+                android:textSize="@dimen/font_normal"/>
+
+
+
+            </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.12"
+            android:layout_height="match_parent"
+            android:id="@+id/cmd_rm"
+            android:src="@drawable/act_domains_rm_domain"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.14"
+            android:layout_height="match_parent"
+            android:id="@+id/cmd_check"
+            android:src="@drawable/act_domains_check_domain"/>
+
+
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/cmd_rm"
-        style="@style/act_domains_theme_lst_item_image_button"
-        android:src="@drawable/act_domains_rm_domain"/>
-
-    <ImageView
-        android:id="@+id/cmd_check"
-        style="@style/act_domains_theme_lst_item_image_button"
-        android:src="@drawable/act_domains_check_domain"/>
 
 </LinearLayout>
