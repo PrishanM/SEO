@@ -1,6 +1,5 @@
 package evensel.pixelclearseo;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,6 +11,8 @@ public class ActSplash extends ActBase
 	{
 		super.onCreate(pSavedInstance);
 		setContentView(R.layout.act_splash);
+
+		getSupportActionBar().hide();
 
 		new Handler().postDelayed(new Runnable()
 		{

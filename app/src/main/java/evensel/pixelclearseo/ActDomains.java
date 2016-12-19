@@ -2,6 +2,8 @@ package evensel.pixelclearseo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -11,11 +13,21 @@ import java.util.ArrayList;
 
 public class ActDomains extends ActBaseTitleBar
 {
+	private TextView textviewTitle;
 	@Override
 	protected void onCreate(Bundle pSavedInstance)
 	{
 		super.onCreate(pSavedInstance);
 		setContentView(R.layout.act_domains);
+
+		final ActionBar abar = getSupportActionBar();
+		View viewActionBar = getLayoutInflater().inflate(R.layout.action_bar_text, null);
+		ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT,ActionBar.LayoutParams.MATCH_PARENT, Gravity.CENTER);
+		textviewTitle = (TextView) viewActionBar.findViewById(R.id.mytext);
+		textviewTitle.setText("Details");
+		abar.setCustomView(viewActionBar, params);
+		abar.setDisplayShowCustomEnabled(true);
+		abar.setDisplayShowTitleEnabled(false);
 
 		p_LstDomain = (ListView) findViewById(R.id.lst_domain);
 

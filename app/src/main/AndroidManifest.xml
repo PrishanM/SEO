@@ -12,7 +12,7 @@
         <activity
             android:name=".ActSplash"
             android:noHistory="true"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -31,12 +31,21 @@
             android:name=".ActDomain"
             android:noHistory="true"
             android:screenOrientation="portrait">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActDomain" />
+
         </activity>
 
         <activity
             android:name=".ActRank"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActRank" />
+
         </activity>
 
     </application>

@@ -53,19 +53,6 @@
 
     </LinearLayout>
 
-    <!--<Button
-        android:id="@+id/cmd_add_domain"
-        android:layout_width="match_parent"
-        android:minHeight="?android:attr/listPreferredItemHeight"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/font_large"
-        android:text="Add New Domain"
-        android:typeface="monospace"
-        android:textColor="@color/colorWhite"
-        android:textStyle="bold"
-        android:drawableLeft="@drawable/act_domains_add_domain"
-        android:background="@drawable/cornered_button"/>-->
-
     <Space
         android:layout_width="match_parent"
         android:layout_height="@dimen/space_normal" />
