@@ -11,15 +11,26 @@
         android:layout_height="80dp"
         android:src="@drawable/act_rank_title"/>
 
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your rank is..."
+        android:textAllCaps="true"
+        android:typeface="monospace"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textStyle="bold"/>-->
+
     <TextView
         android:id="@+id/lbl_rank"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/act_rank_lbl_rank_back"
         android:gravity="center"
-        android:text="10"
+        android:text="99"
         android:textColor="#efecec"
-        android:textSize="80dp"
+        android:textSize="40sp"
         android:textStyle="bold"
         android:visibility="gone"/>
 
@@ -32,7 +43,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_small">
 
         <ImageView style="@style/act_rank_rating_star"/>
 
@@ -61,7 +73,9 @@
         style="@style/act_rank_lbl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/font_xlarge"
         android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
         android:text="www.domain.com"/>
 
     <LinearLayout
@@ -81,6 +95,8 @@
             style="@style/act_rank_lbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/font_xlarge"
+            android:textColor="@color/colorWhite"
             android:layout_marginLeft="10dp"
             android:text="keyword"/>
 
@@ -100,13 +116,19 @@
         android:layout_marginTop="10dp"
         android:text="Contact us..."/>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_normal" />
+
     <ImageView
-        android:layout_width="100dp"
+        android:id="@+id/actionEmail"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:src="@drawable/act_rank_email"/>
 
     <ImageView
-        android:layout_width="100dp"
+        android:id="@+id/actionCall"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:src="@drawable/act_rank_contact_number"/>
 

@@ -2,21 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/cornered_row">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/rowLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:layout_height="48dp"
         android:weightSum="1"
         android:orientation="horizontal"
-        android:background="@color/colorRow">
+        android:background="@drawable/cornered_row">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="0.75"
+            android:layout_weight="0.8"
             android:layout_height="wrap_content"
             android:minHeight="?android:attr/listPreferredItemHeight"
             android:orientation="vertical"
@@ -51,17 +49,17 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="0.12"
+            android:layout_weight="0.1"
             android:layout_height="match_parent"
             android:id="@+id/cmd_rm"
-            android:src="@drawable/act_domains_rm_domain"/>
+            android:background="@drawable/remove_btn"/>
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="0.14"
+            android:layout_weight="0.1"
             android:layout_height="match_parent"
             android:id="@+id/cmd_check"
-            android:src="@drawable/act_domains_check_domain"/>
+            android:background="@drawable/act_domains_check_domain"/>
 
 
 

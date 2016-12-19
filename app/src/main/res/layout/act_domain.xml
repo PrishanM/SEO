@@ -3,139 +3,153 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorBackground"
-                android:orientation="vertical"
-                android:padding="@dimen/activity_horizontal_margin">
+                android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:weightSum="2">
 
-        <TextView
-            android:typeface="monospace"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
-            android:text="Web Site"
-            android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_margin">
 
-        <EditText
-            android:id="@+id/txt_domain"
-            style="@style/act_domain_theme_edt"
-            android:hint="type a domain"
-            android:inputType="textUri"/>
+            <TextView
+                android:typeface="monospace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="Web Site"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
 
-        <ImageView
+            <EditText
+                android:id="@+id/txt_domain"
+                style="@style/act_domain_theme_edt"
+                android:hint="type a domain"
+                android:inputType="textUri"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:src="@drawable/blue_line"/>
+
+            <TextView
+                android:typeface="monospace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="Key Word"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
+
+            <EditText
+                android:id="@+id/txt_keyword"
+                style="@style/act_domain_theme_edt"
+                android:hint="type a key word"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:src="@drawable/blue_line"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:src="@drawable/blue_line"/>
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@color/colorRow">
 
-        <TextView
-            android:typeface="monospace"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
-            android:text="Key Word"
-            android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
+            <TextView
+                android:typeface="monospace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="Name"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
 
-        <EditText
-            android:id="@+id/txt_keyword"
-            style="@style/act_domain_theme_edt"
-            android:hint="type a key word"/>
+            <EditText
+                android:id="@+id/txt_name"
+                style="@style/act_domain_theme_edt"
+                android:hint="type your name"
+                android:inputType="text"/>
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:src="@drawable/blue_line"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:src="@drawable/blue_line"/>
+            <TextView
+                android:typeface="monospace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="E-mail Address"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
 
+            <EditText
+                android:id="@+id/txt_email"
+                style="@style/act_domain_theme_edt"
+                android:hint="type your email address"
+                android:inputType="textEmailAddress"/>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/space_large" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:src="@drawable/blue_line"/>
 
-        <TextView
-            android:typeface="monospace"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
-            android:text="Name"
-            android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
+            <TextView
+                android:typeface="monospace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="Contact Number"
+                android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
 
-        <EditText
-            android:id="@+id/txt_name"
-            style="@style/act_domain_theme_edt"
-            android:hint="type your name"
-            android:inputType="text"/>
+            <EditText
+                android:id="@+id/txt_contact_number"
+                style="@style/act_domain_theme_edt"
+                android:hint="type your contact number"
+                android:inputType="phone"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:src="@drawable/blue_line"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:src="@drawable/blue_line"/>
 
-        <TextView
-            android:typeface="monospace"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
-            android:text="E-mail Address"
-            android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
-
-        <EditText
-            android:id="@+id/txt_email"
-            style="@style/act_domain_theme_edt"
-            android:hint="type your email address"
-            android:inputType="textEmailAddress"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:src="@drawable/blue_line"/>
-
-        <TextView
-            android:typeface="monospace"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
-            android:text="Contact Number"
-            android:layout_marginBottom="@dimen/activity_vertical_margin_small"/>
-
-        <EditText
-            android:id="@+id/txt_contact_number"
-            style="@style/act_domain_theme_edt"
-            android:hint="type your contact number"
-            android:inputType="phone"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:src="@drawable/blue_line"/>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/font_normal" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/cmd_check"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:textSize="@dimen/font_large"
             android:text="Check Rank"
             android:typeface="monospace"
             android:textColor="@color/colorWhite"
             android:textStyle="bold"
-            android:background="@drawable/cornered_button"/>
+            android:background="@drawable/cornered_button"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
 
 
     </LinearLayout>

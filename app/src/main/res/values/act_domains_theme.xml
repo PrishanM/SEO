@@ -14,7 +14,7 @@
         <item name="android:layout_height">50dp</item>
         <item name="android:textColor">#3f4445</item>
         <item name="android:typeface">monospace</item>
-        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
 
     <style name="act_domains_theme_lst_item_lbl_dis">

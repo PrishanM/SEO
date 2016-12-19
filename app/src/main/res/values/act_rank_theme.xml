@@ -7,6 +7,8 @@
         <item name="android:layout_width">15dp</item>
         <item name="android:layout_height">15dp</item>
         <item name="android:src">@drawable/rating_star</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
     </style>
 
     <style name="act_rank_lbl">
